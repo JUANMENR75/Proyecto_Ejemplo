@@ -1,0 +1,526 @@
+/* =========================================
+   CONFIGURACIÓN GENERAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   BANNER PRINCIPAL
+========================================= */
+
+.hero-banner {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-banner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.05),
+        rgba(0, 0, 0, 0.55)
+    );
+}
+
+.hero-content {
+    position: absolute;
+    z-index: 2;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+
+/* =========================================
+   BOTÓN DE DESCARGA
+========================================= */
+
+.btn-descargar-hero {
+    padding: 16px 32px;
+    background: #0284c7;
+    color: white;
+    border: none;
+    border-radius: 12px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.btn-descargar-hero:hover {
+    background: #0369a1;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.btn-descargar-hero:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   INFORMACIÓN GENERAL
+========================================= */
+
+.info-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 25px;
+}
+
+.info-container h2,
+.section-container-multi h2 {
+    color: #075985;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.info-container p {
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   ODS
+========================================= */
+
+.ods-box {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    border-left: 6px solid #0284c7;
+}
+
+.ods-box h3 {
+    color: #0369a1;
+    margin-bottom: 20px;
+}
+
+.ods-box ul {
+    padding-left: 25px;
+}
+
+.ods-box li {
+    margin-bottom: 12px;
+}
+
+
+/* =========================================
+   SECCIONES DEL JUEGO
+========================================= */
+
+.section-game {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding: 80px 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.content-text {
+    flex: 1;
+}
+
+.content-text h2 {
+    color: #075985;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.content-text p {
+    font-size: 17px;
+}
+
+.content-image {
+    flex: 1;
+}
+
+.content-image img {
+    width: 100%;
+    display: block;
+
+    border-radius: 16px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+    transition: transform 0.3s ease;
+}
+
+.content-image img:hover {
+    transform: scale(1.02);
+}
+
+
+/* =========================================
+   ESCENARIOS
+========================================= */
+
+.section-container-multi {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding: 80px 30px;
+}
+
+.section-subtitle {
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+
+.grid-subsecciones {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+.sub-card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.sub-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.sub-card h3 {
+    color: #0369a1;
+
+    margin-bottom: 15px;
+
+    font-size: 23px;
+}
+
+.sub-card img {
+    width: 100%;
+
+    display: block;
+
+    border-radius: 12px;
+
+    margin-bottom: 20px;
+}
+
+.sub-card p {
+    font-size: 16px;
+}
+
+
+/* =========================================
+   MODAL DE DESCARGA
+========================================= */
+
+.download-modal {
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(2, 8, 23, 0.78);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease;
+
+    z-index: 9999;
+}
+
+.download-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* =========================================
+   CAJA DE DESCARGA
+========================================= */
+
+.download-box {
+    width: 100%;
+    max-width: 500px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.4);
+
+    animation: aparecer 0.3s ease;
+}
+
+@keyframes aparecer {
+
+    from {
+        transform: scale(0.85);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
+
+.download-box h2 {
+    color: #075985;
+
+    margin-bottom: 15px;
+
+    font-size: 27px;
+}
+
+.download-box p {
+    color: #475569;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================================
+   BARRA DE PROGRESO
+========================================= */
+
+.progress-container {
+    width: 100%;
+
+    height: 25px;
+
+    background: #e2e8f0;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    margin-top: 25px;
+}
+
+.progress-bar {
+    width: 0%;
+
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        #0284c7,
+        #06b6d4
+    );
+
+    border-radius: 20px;
+
+    transition: width 0.1s linear;
+}
+
+
+/* =========================================
+   PORCENTAJE
+========================================= */
+
+.progress-percent {
+    font-size: 20px !important;
+
+    font-weight: bold;
+
+    color: #0284c7 !important;
+
+    margin-top: 12px;
+}
+
+
+/* =========================================
+   MENSAJE DE DESCARGA COMPLETADA
+========================================= */
+
+.download-success {
+    display: none;
+
+    margin-top: 20px;
+
+    padding: 15px;
+
+    background: #dcfce7;
+
+    color: #166534;
+
+    border-radius: 10px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================
+   BOTÓN CERRAR
+========================================= */
+
+.btn-cerrar {
+    display: none;
+
+    margin: 25px auto 0;
+
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #075985;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: background 0.3s ease;
+}
+
+.btn-cerrar:hover {
+    background: #0369a1;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background: #0f172a;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .hero-banner,
+    .hero-img {
+        height: 450px;
+        min-height: 450px;
+    }
+
+    .hero-content {
+        bottom: 40px;
+        width: 100%;
+    }
+
+    .btn-descargar-hero {
+        font-size: 16px;
+        padding: 14px 24px;
+    }
+
+    .info-container,
+    .section-container-multi,
+    .section-game {
+        padding: 50px 20px;
+    }
+
+    .section-game {
+        flex-direction: column;
+    }
+
+    .grid-subsecciones {
+        grid-template-columns: 1fr;
+    }
+
+    .info-container h2,
+    .section-container-multi h2 {
+        font-size: 27px;
+    }
+
+    .download-box {
+        padding: 30px 20px;
+    }
+
+}

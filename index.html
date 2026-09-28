@@ -3,81 +3,275 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Guardianes del Océano - Sitio Oficial</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- Encabezado / Banner Principal con Imagen Real (1.png) para Responsividad Perfecta -->
+    <!-- ENCABEZADO / BANNER PRINCIPAL -->
     <header class="hero-banner">
-        <img src="Fotos/1.png" alt="Guardianes del Océano Banner" class="hero-img">
+
+        <img
+            src="Fotos/1.png"
+            alt="Guardianes del Océano Banner"
+            class="hero-img"
+        >
+
         <div class="hero-content">
-            <a href="#descarga" class="btn-descargar-hero">Descargar Prototipo (Alfa)</a>
+
+            <button
+                class="btn-descargar-hero"
+                id="btn-descargar"
+            >
+                Descargar Prototipo (Alfa)
+            </button>
+
         </div>
+
     </header>
 
-    <!-- Sección de Información General y ODS -->
+
+    <!-- INFORMACIÓN GENERAL -->
     <section class="info-container">
+
         <h2>¿Qué es Guardianes del Océano?</h2>
-        <p><strong>Guardianes del Océano</strong> es un videojuego educativo en 2D desarrollado en Unity que combina la aventura y la ecología. Su misión principal es generar conciencia sobre la contaminación ambiental a través de dinámicas lúdicas donde los jugadores aprenden la importancia de limpiar los recursos naturales.</p>
-        
+
+        <p>
+            <strong>Guardianes del Océano</strong> es un videojuego educativo
+            en 2D desarrollado en Unity que combina la aventura y la ecología.
+            Su misión principal es generar conciencia sobre la contaminación
+            ambiental a través de dinámicas lúdicas donde los jugadores
+            aprenden la importancia de limpiar los recursos naturales.
+        </p>
+
+
         <div class="ods-box">
+
             <h3>Compromiso Ambiental y ODS Asociados</h3>
+
             <ul>
-                <li><strong>ODS 14 (Vida Submarina):</strong> Eje central enfocado en proteger y limpiar los mares y cuerpos de agua.</li>
-                <li><strong>ODS 12 (Producción y Consumo Responsables):</strong> Fomenta la conciencia sobre el manejo adecuado de residuos y plásticos.</li>
-                <li><strong>ODS 4 (Educación de Calidad):</strong> Utiliza la gamificación como una herramienta pedagógica interactiva.</li>
-                <li><strong>ODS 13 (Acción por el Clima):</strong> Destaca el impacto de la contaminación en el equilibrio global del planeta.</li>
+
+                <li>
+                    <strong>ODS 14 (Vida Submarina):</strong>
+                    Eje central enfocado en proteger y limpiar los mares
+                    y cuerpos de agua.
+                </li>
+
+                <li>
+                    <strong>ODS 12 (Producción y Consumo Responsables):</strong>
+                    Fomenta la conciencia sobre el manejo adecuado de
+                    residuos y plásticos.
+                </li>
+
+                <li>
+                    <strong>ODS 4 (Educación de Calidad):</strong>
+                    Utiliza la gamificación como una herramienta
+                    pedagógica interactiva.
+                </li>
+
+                <li>
+                    <strong>ODS 13 (Acción por el Clima):</strong>
+                    Destaca el impacto de la contaminación en el equilibrio
+                    global del planeta.
+                </li>
+
             </ul>
+
         </div>
+
     </section>
 
-    <!-- Sección 1: Menú Principal -->
+
+    <!-- SECCIÓN 1: MENÚ PRINCIPAL -->
     <section class="section-game">
+
         <div class="content-text">
+
             <h2>1. Menú Principal</h2>
-            <p>La pantalla de inicio da la bienvenida a los jugadores con un entorno animado en bucle, mostrando elementos de la naturaleza, el faro y las opciones principales para comenzar la aventura, acceder a las herramientas de limpieza o seleccionar los diferentes escenarios de juego.</p>
+
+            <p>
+                La pantalla de inicio da la bienvenida a los jugadores con
+                un entorno animado en bucle, mostrando elementos de la
+                naturaleza, el faro y las opciones principales para comenzar
+                la aventura, acceder a las herramientas de limpieza o
+                seleccionar los diferentes escenarios de juego.
+            </p>
+
         </div>
+
+
         <div class="content-image">
-            <img src="Fotos/Menu Principal.png" alt="Menú Principal de Guardianes del Océano">
+
+            <img
+                src="Fotos/Menu Principal.png"
+                alt="Menú Principal de Guardianes del Océano"
+            >
+
         </div>
+
     </section>
 
-    <!-- Sección 2: Selección de Escenarios -->
+
+    <!-- SECCIÓN 2: SELECCIÓN DE ESCENARIOS -->
     <section class="section-container-multi">
+
         <h2>2. Selección de Escenarios</h2>
-        <p class="section-subtitle">Espacio interactivo donde los usuarios eligen el entorno de limpieza. Actualmente contamos con dos zonas principales:</p>
-        
+
+        <p class="section-subtitle">
+            Espacio interactivo donde los usuarios eligen el entorno
+            de limpieza. Actualmente contamos con dos zonas principales:
+        </p>
+
+
         <div class="grid-subsecciones">
+
+            <!-- PLAYA -->
             <div class="sub-card">
+
                 <h3>Escenario: Playa</h3>
-                <img src="Fotos/Escenario Playa.png" alt="Escenario de Playa">
-                <p>Zona costera donde el jugador se enfoca en recolectar plásticos y residuos arrastrados a la orilla por las olas.</p>
+
+                <img
+                    src="Fotos/Escenario Playa.png"
+                    alt="Escenario de Playa"
+                >
+
+                <p>
+                    Zona costera donde el jugador se enfoca en recolectar
+                    plásticos y residuos arrastrados a la orilla por las olas.
+                </p>
+
             </div>
 
+
+            <!-- OCÉANO -->
             <div class="sub-card">
+
                 <h3>Escenario: Océano</h3>
-                <img src="Fotos/Escenario Océano.png" alt="Escenario de Océano">
-                <p>Entorno marino abierto donde se implementan retos de navegación, recolección de basura flotante y esquive de obstáculos.</p>
+
+                <img
+                    src="Fotos/Escenario Océano.png"
+                    alt="Escenario de Océano"
+                >
+
+                <p>
+                    Entorno marino abierto donde se implementan retos de
+                    navegación, recolección de basura flotante y esquive
+                    de obstáculos.
+                </p>
+
             </div>
+
         </div>
+
     </section>
 
-    <!-- Sección 3: Panel de Herramientas -->
+
+    <!-- SECCIÓN 3: PANEL DE HERRAMIENTAS -->
     <section class="section-game">
+
         <div class="content-text">
+
             <h2>3. Panel de Herramientas</h2>
-            <p>El juego incluye un inventario de herramientas ecológicas y de apoyo (como redes, imanes, contenedores, escudos y purificadores) diseñadas para facilitar la limpieza del agua y proteger a la fauna marina de los obstáculos y la contaminación.</p>
+
+            <p>
+                El juego incluye un inventario de herramientas ecológicas
+                y de apoyo, como redes, imanes, contenedores, escudos y
+                purificadores, diseñadas para facilitar la limpieza del agua
+                y proteger a la fauna marina de los obstáculos y la
+                contaminación.
+            </p>
+
         </div>
+
+
         <div class="content-image">
-            <img src="Fotos/Herramientas.png" alt="Pantalla de Herramientas del Juego">
+
+            <img
+                src="Fotos/Herramientas.png"
+                alt="Pantalla de Herramientas del Juego"
+            >
+
         </div>
+
     </section>
 
-    <!-- Pie de página -->
+
+    <!-- MODAL DE DESCARGA -->
+    <div
+        id="download-modal"
+        class="download-modal"
+    >
+
+        <div class="download-box">
+
+            <h2 id="download-title">
+                Descargando juego...
+            </h2>
+
+
+            <p id="download-text">
+                Preparando descarga...
+            </p>
+
+
+            <!-- BARRA DE PROGRESO -->
+            <div class="progress-container">
+
+                <div
+                    id="progress-bar"
+                    class="progress-bar"
+                ></div>
+
+            </div>
+
+
+            <!-- PORCENTAJE -->
+            <p
+                id="progress-percent"
+                class="progress-percent"
+            >
+                0%
+            </p>
+
+
+            <!-- MENSAJE FINAL -->
+            <div
+                id="download-success"
+                class="download-success"
+            >
+                ¡Juego descargado! 🎮🌊
+            </div>
+
+
+            <!-- BOTÓN CERRAR -->
+            <button
+                id="btn-cerrar"
+                class="btn-cerrar"
+            >
+                Cerrar
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- PIE DE PÁGINA -->
     <footer>
-        <p>2026 Guardianes del Océano. Todos los derechos reservados.</p>
+
+        <p>
+            2026 Guardianes del Océano. Todos los derechos reservados.
+        </p>
+
     </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
 
 </body>
 </html>
+```
